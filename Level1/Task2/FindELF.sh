@@ -14,4 +14,4 @@
 #	    -> r - reverse order
 #	    -> h - human readable
 
-ls $1/*.elf -lSrh
+ls $1/* -lAR | sort -k 5 -n | grep -ie "elf"
